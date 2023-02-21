@@ -16,18 +16,27 @@
     <div class="Home" id="home">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar scroll</a>
+                <div class="icon">icon here</div>
+                <a class="navbar-brand" href="#">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Link
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
@@ -43,13 +52,40 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Link
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <img class="lupa" src="./imgs/lupa.svg" alt="lupa">
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="search" aria-label="search"
+                                aria-describedby="basic-addon1">
+                            <div class="sel_lang_text"><img class="earth" src="./imgs/earth.svg"></div>
+                            <select class="selectpicker" data-width="fit">
+                                <option>Eng <img class="lupa" src="./imgs/lupa.svg" alt="sj"></option>
+                                <option>Rus <img class="lupa" src="./imgs/lupa.svg" alt="sj"></option>
+                                <option>Uzb <img class="lupa" src="./imgs/lupa.svg" alt="sj"></option>
+                                <option>Deu <img class="lupa" src="./imgs/lupa.svg" alt="sj"></option>
+                            </select>
+                            <button type="button" class="down_btn button-23">Download</button>
+
+                        </div>
                     </form>
                 </div>
             </div>
@@ -57,7 +93,7 @@
     </div>
 
     <!-- Bootstrap js link from npm -->
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
