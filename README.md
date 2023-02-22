@@ -1,1 +1,1 @@
-# Game club
+# Game Club
