@@ -140,7 +140,7 @@ body {
 }
 
 .navbar {
-    padding: 10px 200px;
+    padding: 10px 300px;
 }
 
 .ico {
@@ -216,15 +216,23 @@ body {
 }
 
 /* swiper style ---------- */
-html,
+
 .container {
     position: relative;
-    height: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+
 }
 
 .swiper {
+    flex: 0 1 70%;
     width: 100%;
     height: 100%;
+    border: 1px solid red;
+
 }
 
 .swiper-slide {
@@ -241,4 +249,42 @@ html,
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* ----------------------------------------- */
+.top_play {
+    width: 100%;
+    height: 100%;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 0 1 30%;
+}
+
+.boxes {
+    position: relative;
+    width: 100%;
+}
+
+.top_play img {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 0 20px;
+}
+
+.top_play .gl {
+    margin: 13px 20px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    font-family: "JetBrains", monospace;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+    border: 2px solid red;
+    border-radius: 15px;
+    background: #b6b6b6;
+
 }
